@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  position: relative;
 }
 
 .cabecalho-logo {
@@ -14,6 +14,14 @@
   width: 68px;
   height: 64px;
   margin-left: 48px;
+}
+
+.cabecalho-imagem-mobile {
+  display: block;
+}
+
+.cabecalho-imagem-desktop {
+  display: none;
 }
 
 .menu-hamburguer {
@@ -26,4 +34,76 @@
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor-preto);
+}
+
+.cabecalho-itens-navegacao li {
+  list-style: none;
+  margin: 16px 0;
+}
+
+.item-navegacao-cabecalho {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-size: 1.5rem;
+  font-weight: var(--peso-fonte-medium);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-hamburguer {
+    margin-right: 60px;
+  }
+
+  .menu-hamburguer label {
+    display: none;
+  }
+
+  .cabecalho-itens-navegacao {
+    display: block;
+  }
+
+  .cabecalho-itens-navegacao ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .cabecalho-logo {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .cabecalho-logo {
+      display: inline-block;
+      width: 260px;
+      margin-left: 120px;
+    }
+
+    .cabecalho-imagem-mobile {
+      display: none;
+    }
+
+    .cabecalho-imagem-desktop {
+      display: block;
+    }
+
+    .menu-hamburguer {
+      margin-right: 120px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .cabecalho-logo {
+      margin-left: 240px;
+    }
+
+    .menu-hamburguer {
+      margin-right: 240px;
+    }
+  }
 }
