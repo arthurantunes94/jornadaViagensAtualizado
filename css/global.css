@@ -38,14 +38,72 @@ button {
 
 body {
   font-family: var(--fonte-monteserrat);
+  color: var(--cor-grafite);
 }
 
 section {
   margin-bottom: 88px;
 }
+.titulo {
+  margin-bottom: 32px;
+}
+
+.titulo h2 {
+  font-size: 1.75rem;
+  font-weight: var(--peso-fonte-bold);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.titulo br {
+  display: block;
+}
+
+.titulo hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--cor-vermelho);
+  border: none;
+}
+
+.botao {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-weight: var(--peso-fonte-bold);
+  background-color: var(--cor-vermelho);
+  display: inline-block;
+  height: 64px;
+  line-height: 64px;
+  border-radius: 16px;
+  font-size: 1.25rem;
+}
+
+.card .botao {
+  width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .titulo h2 {
+    font-size: 2rem;
+  }
+
+  .titulo br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .botao:hover {
+    background-color: var(--cor-bordo);
+  }
+}
 
 @media screen and (min-width: 1440px) {
   section {
     margin-bottom: 104px;
+  }
+
+  .titulo {
+    margin-bottom: 64px;
   }
 }

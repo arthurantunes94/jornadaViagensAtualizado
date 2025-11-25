@@ -1,0 +1,102 @@
+.corpo-ofertas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.corpo-ofertas .card {
+  width: 312px;
+  height: 288px;
+  border-radius: 16px;
+  color: var(--cor-branco);
+  text-align: center;
+}
+
+.corpo-ofertas .japao {
+  background: url(../img/img-japao-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.corpo-ofertas .san-andreas {
+  background: url(../img/img-san-andreas-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.corpo-ofertas .paraiba {
+  background: url(../img/img-paraiba-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.corpo-ofertas .manaus {
+  background: url(../img/img-manaus-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.card .tipo-oferta {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: var(--peso-fonte-regular);
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.card .pais-oferta {
+  font-size: 2.5rem;
+  font-weight: var(--peso-fonte-bold);
+  margin-bottom: 24px;
+}
+
+.card .valor-oferta {
+  font-size: 2rem;
+  font-weight: var(--peso-fonte-bold);
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .corpo-ofertas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .corpo-ofertas {
+    flex-direction: column;
+  }
+
+  .corpo-ofertas .card {
+    width: 588px;
+    height: 308px;
+  }
+
+  .card .pais-oferta {
+    font-size: 3rem;
+  }
+
+  .card .valor-oferta {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .corpo-ofertas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .corpo-ofertas .card {
+    width: 625px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .corpo-ofertas .card {
+    width: 588px;
+  }
+}
