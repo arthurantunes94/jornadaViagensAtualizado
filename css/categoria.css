@@ -1,0 +1,74 @@
+.corpo-categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.categoria {
+  display: block;
+  width: 312px;
+  height: 220px;
+  background-color: var(--cor-cinza-claro);
+  text-decoration: none;
+  color: var(--cor-grafite);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.categoria img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 41px;
+}
+
+.categoria h3 {
+  font-size: 1.75rem;
+  font-weight: var(--peso-fonte-bold);
+  margin-top: 24px;
+}
+
+.pacotes-nacionais br {
+  display: none;
+}
+
+.pacotes-internacionais img {
+  margin-top: 24px;
+}
+
+.pacotes-internacionais br {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .corpo-categoria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .corpo-categoria {
+    margin: 0 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .corpo-categoria {
+    margin: 0;
+  }
+
+  .pacotes-nacionais br {
+    display: block;
+  }
+
+  .pacotes-nacionais img {
+    margin: 24px 0;
+  }
+
+  .pacotes-nacionais h3 {
+    margin: 0;
+  }
+}
