@@ -1,0 +1,96 @@
+.corpo-pagamentos {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 24px;
+  margin: 0 24px;
+}
+
+.pagamentos-textos h3 {
+  font-size: 1.75rem;
+  font-weight: var(--peso-fonte-bold);
+  margin-bottom: 24px;
+}
+
+.pagamentos-textos p {
+  font-size: 1.25rem;
+  font-weight: var(--peso-fonte-regular);
+  line-height: 32px;
+}
+
+.pagementos-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+}
+
+.pagementos-imagens .chapeu {
+  background: url(../img/img-pagamentos-chapeu.png) no-repeat;
+  background-size: cover;
+}
+
+.pagementos-imagens .passaporte {
+  background: url(../img/img-pagamentos-passaporte.png) no-repeat;
+  background-size: cover;
+}
+
+.pagementos-imagens .pessoas {
+  background: url(../img/img-pagamentos-pessoas.png) no-repeat;
+  background-size: cover;
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .corpo-pagamentos {
+    margin: 0 60px;
+  }
+
+  .pagementos-imagens .chapeu {
+    background: url(../img/img-pagamentos-chapeu-tablet.png) no-repeat;
+    background-size: cover;
+  }
+
+  .pagementos-imagens .passaporte {
+    background: url(../img/img-pagamentos-passaporte-tablet.png) no-repeat;
+    background-size: cover;
+  }
+
+  .pagementos-imagens .pessoas {
+    background: url(../img/img-pagamentos-pessoas-tablet.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .corpo-pagamentos {
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    gap: 24px;
+    margin: 0;
+  }
+
+  .pagamentos-textos {
+    width: 384px;
+  }
+
+  .pagementos-imagens {
+    width: 790px;
+  }
+
+  .pagementos-imagens .chapeu {
+    background: url(../img/img-pagementos-chapeu-desk.png) no-repeat;
+    background-size: cover;
+  }
+
+  .pagementos-imagens .passaporte {
+    background: url(../img/img-pagamentos-passaporte-desk.png) no-repeat;
+    background-size: cover;
+  }
+
+  .pagementos-imagens .pessoas {
+    background: url(../img/img-pagementos-pessoas-desk.png) no-repeat;
+    background-size: cover;
+  }
+}
