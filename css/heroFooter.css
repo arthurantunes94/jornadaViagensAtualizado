@@ -1,0 +1,25 @@
+.hero-footer {
+  margin-bottom: 0;
+}
+
+.hero-footer-imagem {
+  background: url(../img/hero-footer-imagem-mobile.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-footer-imagem {
+    background: url(../img/hero-footer-iamgem-tablet.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-footer-imagem {
+    background: url(../img/hero-footer-imagem-desktop.png) no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+}
